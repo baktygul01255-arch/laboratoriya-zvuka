@@ -273,7 +273,7 @@ input[type=range]{width:100%;height:27px;accent-color:var(--cyan)}select,input[t
 "use strict";
 var q=function(s){return document.querySelector(s)},qa=function(s){return Array.prototype.slice.call(document.querySelectorAll(s))};
 var lang=localStorage.getItem("soundLabLang")||"ru",theme=localStorage.getItem("soundLabTheme")||"dark",audioCtx=null,nodes=[],stream=null,analyser=null,micFrame=null,phase=0,heroPhase=0,heroEnergy=0,simTime=0,simRunning=true,mediaRecorder=null,recordChunks=[],recordedBlob=null,recordedUrl=null,recordAnalysisBlob=null,recordAnalysisUrl=null,recordAnalysisPromise=null,recordFrozenPitch=0,recordStartedAt=0,recordDuration=0,recordSaved=false,recordLocalSaved=false,lastPitch=0,materialCount=0,toastTimer=null,reduceMotion=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-var CLOUD_API_URL="https://script.google.com/macros/s/AKfycbygsHfa-v-BEE4GvHNpwSEyjceuYVGt1bfNJC4D2AYTt87eEF8aD2CJN5ZQNYlO4sg6pQ/exec",cloudItems=[];
+var CLOUD_API_URL="https://script.google.com/macros/s/AKfycbxlxtGCVD4_Z4g-jwizDi5VTBIsn6XfQGowgEghokKi6YQflRhB-FRnbnXkaMfwaCTLvg/exec",cloudItems=[];
 var records=JSON.parse(localStorage.getItem("soundLabRecords")||"[]");
 var series=JSON.parse(localStorage.getItem("soundLabSeries")||"{}"),materialUrls=[];
 var zerdeState=JSON.parse(localStorage.getItem("soundLabZerde")||'{"scores":{},"evidence":{},"jury":{}}');
